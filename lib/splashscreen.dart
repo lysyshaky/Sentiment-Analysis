@@ -17,13 +17,17 @@ class _MySplashState extends State<MySplash> {
   Widget build(BuildContext context) {
     return SplashScreen(
       seconds: 2,
-      navigateAfterSeconds: const Home(),
+      navigateAfterSeconds: Home(),
       title: const Text('Sentiment Analysis',
           style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 30.0,
               color: Colors.white)),
-      image: const Image(image: AssetImage('assets/theater.png')),
+      image: const Image(
+          image: AssetImage(
+        'assets/theater.png',
+      )),
+      photoSize: 100,
       gradientBackground: const LinearGradient(
           colors: [Color(0xFFe100ff), Color(0xFF8e2de2)],
           begin: Alignment.topCenter,
